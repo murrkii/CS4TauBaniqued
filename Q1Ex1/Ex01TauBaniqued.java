@@ -1,53 +1,52 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
-package ex01taubaniqued;
+
+package com.mycompany.ex01taubaniqued;
 
 /**
  *
- * @author TAU
+ * @author boy
  */
 public class Ex01TauBaniqued {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         //self introduction
         String name = "Marky Miguel C. Baniqued";
-        int age = 15;
-        String hobbies = "Drawing, playing games (such as Wild Rift, Valorant, and maybe Genshin), and talking to friends!";
+        String faveGame = "Wild Rift";
+        String wrMains = "Sona and Orianna";
         
-        //academic information
-        int yrsPisay = 4;
-        String secPisay = "10 - Tau";
-        String faveSub = "ADTech";
+        //sona stats
+        int totalMatch1 = 84;
+        double winRate1 = 64.3;
+        int mastery1 = 4;
         
-        //goals and aspirations
-        double csGrade = 1.75;
-        String csExpect = "To have fun with the subject and learn enough to maybe consider it as a possible career path.";
-        String pisayExpect = "To (hopefully) pass with flying colors, and score a boyfriend EME SHSHSH.";
+        //orianna stats
+        int totalMatch2 = 84;
+        double winRate2 = 54.8;
+        int mastery2 = 4;
         
         System.out.print ("Self Introduction");
         System.out.printf ("%nName: %s", name);
-        System.out.printf ("%nAge: %s", age);
-        System.out.printf ("%nHobbies: %s", hobbies);
+        System.out.printf ("%nFavorite Game: %s", faveGame);
+        System.out.printf ("%nWild Rift Mains: %s", wrMains);
         
-        System.out.printf ("%n%nAcademic Information");
-        System.out.printf ("%nYears in Pisay: %s", yrsPisay);
-        System.out.printf ("%nSection: %s", secPisay);
-        System.out.printf ("%nFavorite Subject %s", faveSub);
+        System.out.printf ("%n%nSona Stats");
+        System.out.printf ("%nTotal Matches: %s", totalMatch1);
+        System.out.printf ("%nWin Rate: %s", winRate1);
+        System.out.print ("%");
+        System.out.printf ("%nMastery Level: %s", mastery1);
         
-        System.out.printf ("%n%nGoals and Expectations");
-        System.out.printf ("%nExpected CS Grade: %s", csGrade);
-        System.out.printf ("%nCS Expectations: %s", csExpect);
-        System.out.printf ("%nPisay Expectations: %s", pisayExpect);
+        System.out.printf ("%n%nOrianna Stats");
+        System.out.printf ("%nTotal Matches: %s", totalMatch2);
+        System.out.printf ("%nWin Rate: %s", winRate2);
+        System.out.print ("%");
+        System.out.printf ("%nMastery Level: %s", mastery2);
         
-        System.out.printf ("%n%nYears without Pisay (so far): %s", age - yrsPisay);
-        System.out.printf ("%n", name);
-        
+        System.out.printf ("%n%nHow much more matches do I have with Sona than with Orianna?: %s", 
+        totalMatch1 - totalMatch2);
+        System.out.printf ("%nIs my Sona Win Rate higher than my Orianna's?: %s", winRate1 > winRate2);
+        System.out.printf ("%nIs my Sona Mastery Level higher than my Orianna's?: %s", mastery1 > mastery2);
     }
-    
 }
